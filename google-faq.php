@@ -145,6 +145,13 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
     <!-- inizio footer -->
     <footer>
 
+        <ul>
+            <li class="trattino">Google</li>
+            <li class="trattino">Tutto su Google</li>
+            <li class="trattino">Privacy</li>
+            <li>Termini</li>
+        </ul>
+
     </footer>
     <!-- fine footer -->
        
