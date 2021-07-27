@@ -38,10 +38,22 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
             'risposta' => ["Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:",
 
             
-            "La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
-            Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
-            Google LLC, con sede negli Stati Uniti, per il resto del mondo.
-            La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.
+            "<ol>
+                <li>
+                    La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
+                        <ol type='a'>
+                            <li>
+                                <p>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</p>
+                            </li>
+                            <li>    
+                                <p>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</p>
+                            </li>
+                        </ol>
+                </li>
+                <li>
+                    <p>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</p>
+                </li>
+            </ol>
             Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.",
             
             
@@ -83,15 +95,24 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
     <title>Google FAQ</title>
 </head>
 <body>
+    <!-- inizio header -->
+    <header>
 
-    <?php foreach($faq as $key => $text){ ?>
+    </header>
+    <!-- fine header -->
 
-        <h2><?php echo $text['domanda'] ?></h2>
-        <?php foreach($text['risposta'] as $element) { ?>
-            <p><?php echo $element ?></p>
-        <?php } ?>
 
-    <?php } ?>
+    <!-- inizio main -->
+    <main>
+
+    </main>
+    <!-- fine main -->
+
+    <!-- inizio footer -->
+    <footer>
+
+    </footer>
+    <!-- fine footer -->
        
 </body>
 </html>
