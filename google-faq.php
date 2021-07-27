@@ -92,11 +92,36 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+
     <title>Google FAQ</title>
 </head>
 <body>
     <!-- inizio header -->
     <header>
+        <div class="header_top">
+            <img class="logo" src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="logo google">
+            <h3 class="title_header">Privacy e Termini</h3>
+        </div>
+
+        <div class="header_bottom">
+
+            <ul>
+                <li>Introduzione</li>
+                <li>Norme sulla privacy</li>
+                <li>Termini di servizio</li>
+                <li>Tecnologie</li>
+                <li class="active">Domande frequenti</li>
+            </ul>
+
+        </div>
 
     </header>
     <!-- fine header -->
@@ -104,7 +129,16 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
 
     <!-- inizio main -->
     <main>
+        <div class="container">
+            <?php foreach($faq as $key => $text){ ?>
 
+                <h2><?php echo $text['domanda'] ?></h2>
+                <?php foreach($text['risposta'] as $element) { ?>
+                    <p class="padding"><?php echo $element ?></p>
+                <?php } ?>
+
+            <?php } ?>
+        </div>
     </main>
     <!-- fine main -->
 
